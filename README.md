@@ -52,3 +52,80 @@ Algorithm	Apriori (Association Rule Mining)
 
 Dataset:-
 The dataset contains retail-style transactional data, where each row represents a basket of items purchased by a customer.
+📂 Project Structure
+Market--basket-Analysis/
+│
+├── Market_Basket_Analysis.ipynb   # Main notebook
+├── datasets/                      # (Optional) transaction dataset
+├── README.md                      # Project documentation
+└── images/                        # Saved charts (if any)
+Steps Performed in Notebook
+
+Data Loading & Cleaning
+
+Handle missing values
+
+Convert transactions to list-based formats
+
+Data Transformation
+
+One-hot encoding for transaction–item mapping
+
+Frequent Itemset Generation
+Using Apriori:
+
+from mlxtend.frequent_patterns import apriori
+
+Association Rule Mining
+Generate rules:
+
+from mlxtend.frequent_patterns import association_rules
+
+Visualization
+
+Bar plot of top frequent items
+
+Scatter plots for confidence vs support
+
+Heatmaps for lift values
+
+Visualizations Included
+
+Visualization	Description
+top_items.png	Top purchased items
+frequent_itemsets.png	Most common product groups
+rules_scatter.png	Support vs Confidence distribution
+lift_heatmap.png	Strength of association between products
+
+Sample Output
+Rule: Bread → Butter  
+Support: 0.12  
+Confidence: 0.65  
+Lift: 1.80  
+Use-Cases & Applications
+
+Product Placement Optimization
+
+Inventory Planning
+
+Recommendation Systems
+
+Personalized Offers
+
+Retail Analytics
+
+Future Improvements
+
+Implement FP-Growth algorithm
+
+Deploy as a Streamlit dashboard
+
+Real-time recommendation pipeline
+
+Add interactive visualizations (Plotly)
+
+Author
+
+Aryan Singh
+B.Tech | AI & Data Science
+GitHub: @aryansingh0710
