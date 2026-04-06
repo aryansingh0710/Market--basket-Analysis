@@ -1,131 +1,72 @@
-A Data Mining Project for Identifying Product Associations and Customer Buying Patterns
+# 🛒 Market Basket Analysis Dashboard
 
-Market Basket Analysis (MBA) is a powerful data-mining technique used in retail and e-commerce to understand customer purchase behavior. This project uses the Apriori algorithm to uncover frequent itemsets and generate association rules that reveal which products are often bought together.
+🚀 A data-driven project to uncover hidden purchasing patterns using association rule mining and visualize them through an interactive dashboard.
 
-Project Overview
+---
 
-This project analyzes transactional retail data to:
+## 📌 Project Overview
+Market Basket Analysis (MBA) is a technique used to identify relationships between products frequently bought together.  
+This project helps businesses improve cross-selling strategies and customer recommendations.
 
-Identify frequently purchased product combinations
+---
 
-Generate association rules using the Apriori algorithm
+## 🎯 Objectives
+- Discover frequent itemsets from transaction data  
+- Generate association rules using Apriori algorithm  
+- Visualize insights using interactive dashboards  
+- Provide business recommendations  
 
-Compute support, confidence, and lift
+---
 
-Visualize most common itemsets and rules
+## 🛠️ Tech Stack
+- **Python**
+- **Pandas, NumPy**
+- **MLxtend (Apriori Algorithm)**
+- **Matplotlib, Plotly**
+- **Streamlit (Dashboard)**
+- **Power BI (Optional Visualization)**
 
-Provide insights for:
+---
 
-Cross-selling
+## 📊 Features
+- 📈 Frequent Itemset Generation  
+- 🔗 Association Rule Mining  
+- 📊 Interactive Visualizations  
+- 🖥️ User-friendly Streamlit Interface  
 
-Product placement
+---
 
-Discount bundling
-
-Recommendation systems
-
-The project is implemented in Python using Jupyter Notebook.
-Key Concepts
-Frequent Itemsets
-
-Groups of items frequently purchased together (e.g., Milk & Bread).
-
-Association Rules
-
-Rules like:
-If a customer buys A → they are likely to buy B
-
-Measured using:
-
-Support – frequency of itemset in the dataset
-
-Confidence – probability of B given A
-
-Lift – strength of the association
-
- Tech Stack
-Component	Technology
-Language	Python
-Notebook	Jupyter Notebook
-Libraries	pandas, numpy, mlxtend, matplotlib, seaborn
-Algorithm	Apriori (Association Rule Mining)
-
-Dataset:-
-The dataset contains retail-style transactional data, where each row represents a basket of items purchased by a customer.
-📂 Project Structure
-Market--basket-Analysis/
+## 📂 Project Structure
+Market-Basket-Analysis/
 │
-├── Market_Basket_Analysis.ipynb   # Main notebook
-├── datasets/                      # (Optional) transaction dataset
-├── README.md                      # Project documentation
-└── images/                        # Saved charts (if any)
-Steps Performed in Notebook
+├── app.py # Streamlit dashboard
+├── dataset.csv # Transaction dataset
+├── mba_analysis.ipynb # Data analysis notebook
+├── requirements.txt # Dependencies
+└── README.md # Project documentation
 
-Data Loading & Cleaning
+## ⚙️ Installation & Setup
 
-Handle missing values
+### 1️⃣ Clone the repository
+git clone https://github.com/aryansingh0710/Market--basket-Analysis.git
+cd Market--basket-Analysis
+2️⃣ Install dependencies
+pip install -r requirements.txt
+3️⃣ Run the app
+streamlit run app.py
+🌐 Live Demo
 
-Convert transactions to list-based formats
+👉 https://aryan--market--basket-analysis.streamlit.app/
 
-Data Transformation
-
-One-hot encoding for transaction–item mapping
-
-Frequent Itemset Generation
-Using Apriori:
-
-from mlxtend.frequent_patterns import apriori
-
-Association Rule Mining
-Generate rules:
-
-from mlxtend.frequent_patterns import association_rules
-
-Visualization
-
-Bar plot of top frequent items
-
-Scatter plots for confidence vs support
-
-Heatmaps for lift values
-
-Visualizations Included
-
-Visualization	Description
-top_items.png	Top purchased items
-frequent_itemsets.png	Most common product groups
-rules_scatter.png	Support vs Confidence distribution
-lift_heatmap.png	Strength of association between products
-
-Sample Output
-Rule: Bread → Butter  
-Support: 0.12  
-Confidence: 0.65  
-Lift: 1.80  
-Use-Cases & Applications
-
-Product Placement Optimization
-
-Inventory Planning
-
-Recommendation Systems
-
-Personalized Offers
-
-Retail Analytics
-
-Future Improvements
-
-Implement FP-Growth algorithm
-
-Deploy as a Streamlit dashboard
-
-Real-time recommendation pipeline
-
-Add interactive visualizations (Plotly)
-
-Author
-
-Aryan Singh
-B.Tech | AI & Data Science
-GitHub: @aryansingh0710
+📊 Sample Insights
+Customers who buy bread often buy butter
+Strong association between milk & cereals
+Helps in product placement & recommendation systems
+🔥 Future Enhancements
+Real-time data integration
+Recommendation engine
+Deployment on cloud
+📫 Connect With Me
+🌐 Portfolio: https://aryansingh00.netlify.app/
+💼 LinkedIn: https://www.linkedin.com/in/aryan-singh-ba6000252
+📧 Email: itsaryan0710@gmail.com
